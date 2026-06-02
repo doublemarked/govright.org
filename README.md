@@ -43,6 +43,10 @@ offline and when served from any static host (GitHub Pages, Netlify, S3, etc.).
     over HTTP, not just `file://`.
   - WordPress's **emoji loader** script was removed (non-essential plumbing that
     fetched a polyfill from the live server).
+  - The header logo and homepage hero image were hard-coded (by the Divi page
+    builder) to an old `*.sites.empathic.io` staging domain over `http://`,
+    which an HTTPS host blocks as mixed content. Those assets were pulled into
+    the archive and re-pointed at same-origin paths.
 - **Verified with a full headless-browser audit served over HTTP** (every page
   loaded via the Chrome DevTools Protocol, the same way Pages serves it): all
   **52 pages** render correctly with **0** broken links, **0** missing
