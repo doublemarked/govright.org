@@ -1,0 +1,226 @@
+/*
+Theme Name:     GovRight
+Theme URI:
+Description:    Divi child theme.
+Author:         Anzhela Petrovska
+Author URI:
+Template:       Divi
+Version:        0.1.0
+*/
+
+a:hover {
+    text-decoration: underline;
+    color: #96C83D;
+}
+
+#home-header .et_pb_fullwidth_header_0.et_pb_fullwidth_header .header-content {
+    max-width: 500px;
+}
+
+#home-header .et_pb_fullwidth_header_0.et_pb_fullwidth_header .header-content h1 {
+    font-weight: 800 !important;
+}
+
+#govright-logo-fixed {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 0 0 0 30px;
+    text-align: center;
+    z-index: 10;
+}
+
+/*==================================
+Gradient drop
+===================================*/
+.gradient-background {
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0.8)), color-stop(40%, rgba(0, 0, 0, 0.6)), color-stop(100%, rgba(0, 0, 0, 0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0) 100%); /* IE10+ */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 40%, rgba(0, 0, 0, 0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc000000', endColorstr='#00000000', GradientType=1); /* IE6-9 */
+}
+
+/*==================================
+Hide the theme Vendor's promotion
+===================================*/
+#footer-info {
+    display: none;
+}
+
+/*==================================
+Fixed footer widget menu link colors
+===================================*/
+
+.et_pb_widget li a:hover {
+    color: #96c83d !important;
+}
+
+/*==================================
+ Mailchimp signup theming in footer widget
+===================================*/
+#mc_embed_signup {
+}
+
+#mce-EMAIL {
+    border: 0;
+    padding: 5px;
+    color: #333;
+    font-size: 14px;
+    margin: 5px 5px 5px 0;
+}
+
+#mc-embedded-subscribe {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 14px;
+    padding: 5px;
+    margin: 5px 5px 5px 0;
+    cursor: pointer;
+}
+
+#mc-embedded-subscribe:hover {
+    background-color: #555;
+    border-color: #555;
+}
+
+/*==================================
+Cresta Social Share plugin styles
+===================================*/
+#crestashareicon {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 0 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/*==================================
+Gravity Forms styles
+===================================*/
+.gform_button,
+.gform_save_link,
+div.form_saved_message div.form_saved_message_emailform form input[type=submit] {
+    border: 2px outset buttonface;
+    background-color: rgb(9, 59, 93);
+    color: #FFFFFF;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    line-height: normal;
+}
+
+.gform_wrapper .gform_footer a.gform_save_link {
+    font-family: Arial;
+}
+
+.gform_button:hover,
+a.gform_save_link:hover,
+div.form_saved_message div.form_saved_message_emailform form input[type=submit]:hover {
+    background-color: #96c83d;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+/*==================================
+Add inner shadow effect to main header
+===================================*/
+#main-header, #main-header.et-fixed-header {
+    -webkit-box-shadow: inset 0px 0px 20px 0px rgba(9, 59, 93, 0.3) !important;
+    -moz-box-shadow: inset 0px 0px 20px 0px rgba(9, 59, 93, 0.3) !important;
+    box-shadow: inset 0px 0px 20px 0px rgba(9, 59, 93, 0.3) !important;
+}
+
+/*==================================
+About us page styles
+===================================*/
+#menu-about-us-menu a {
+    color: #093b5d;
+}
+
+.et_pb_social_media_follow li {
+    float: none;
+    display: inline-block;
+}
+
+.et_pb_social_media_follow {
+    text-align: center;
+}
+
+#partners a:hover {
+    color: #96c83d;
+}
+
+.shadow .et_pb_column {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4), inset 0 0 45px #e7e7e7;
+    border: 1px solid #fafafa;
+}
+
+.shadow .et_pb_row.et_pb_equal_columns {
+    overflow: visible;
+}
+
+.shadow .et_pb_column.et_pb_column_empty {
+    border: none;
+    box-shadow: none;
+}
+
+/*==================================
+Media query styles
+===================================*/
+@media only screen and (max-width: 980px) {
+    #govright-logo-fixed {
+        display: none;
+    }
+}
+
+@media (max-width: 980px) {
+    #about-us {
+        padding: 0;
+    }
+
+    #partners {
+        padding: 0;
+    }
+
+    #nav_menu-3 {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .shadow .et_pb_row.et_pb_equal_columns {
+        width: 65%;
+    }
+
+    .shadow .et_pb_column {
+        padding: 0 25px;
+    }
+}
+
+@media (max-width: 479px) {
+
+    .shadow .et_pb_team_member_image {
+        margin: 10px !important;
+    }
+
+    .shadow .et_pb_column {
+        padding: 0 10px;
+    }
+
+    .shadow .et_pb_team_member {
+        padding: 5px !important;
+    }
+
+    .shadow .et_pb_row.et_pb_equal_columns {
+        width: 90%;
+    }
+}
+
